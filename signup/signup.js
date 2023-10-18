@@ -15,7 +15,7 @@ form.addEventListener('submit',(e)=>{
     password.value='';
     mobile.value='';
     
-    alert('Resistered Successfully')
+   
 });
 
 
