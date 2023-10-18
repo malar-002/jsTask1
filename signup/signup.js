@@ -9,7 +9,10 @@ form.addEventListener('submit',(e)=>{
    if( !validateData()){
        e.preventDefault();
    }
-    
+    username.value='';
+    email.value='';
+    password.value='';
+    mobile.value='';
 })
 
 
