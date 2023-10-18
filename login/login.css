@@ -17,7 +17,7 @@ body{
 }
 .container{
  position: relative;
- width: 460px;
+ width: 380px;
  height: auto;
  background: #dedede;
  border-radius: 5px;
@@ -40,7 +40,7 @@ body{
 }
 
 input{
-    width: 420px;
+    width: 340px;
     height: 40px;
     margin-top: 15px;
     padding: 20px ;
@@ -71,7 +71,7 @@ button a{
 
 button {
    
-    width:400px ;
+    width:340px ;
     padding: 13px;
     margin: 30px 10px 10px 10px;
    
