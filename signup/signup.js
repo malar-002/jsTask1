@@ -11,7 +11,7 @@ form.addEventListener('submit',(e)=>{
    }
    
 })
-emptyInputBox()
+emptyInputBox();
 
 function emptyInputBox(){
     username.value='';
