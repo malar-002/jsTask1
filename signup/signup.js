@@ -6,15 +6,11 @@ const mobile= document.querySelector('#mobile');
 let formvalid=true;
 
 form.addEventListener('submit',(e)=>{
-   
    if( !validateData()){
-   e.preventDefault();
-   
+       e.preventDefault();
    }
     
-    
-   
-});
+})
 
 
 function validateData(){
@@ -68,7 +64,7 @@ function validateData(){
         valid(mobile);
     }
     
- return formvalid
+ return formvalid;
 }
 
 function setError(element,msg){
