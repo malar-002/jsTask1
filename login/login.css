@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(purple,blue,purple) no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+.container{
+ position: relative;
+ width: 460px;
+ height: auto;
+ background: #dedede;
+ border-radius: 5px;
+ padding: 20px;
+
+}
+.heading{
+    padding: 10px 120px;
+    font-size: 30px;
+    text-wrap: nowrap;
+}
+
+
+
+ label{
+    padding: 15px 0px;
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+    font-weight:400;
+}
+
+input{
+    width: 420px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 20px ;
+    border-radius:8px;
+    border: none;
+    box-shadow: 1.5px 1.5px 8px rgb(77, 75, 75);
+    outline: none;
+}
+
+.required{
+    text-align: center;
+    font-size: 13px;
+    color:red;
+    padding: 5px 10px 10px 10px;
+   
+}
+a{
+   
+    margin: 20px 10px 10px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+button a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button {
+   
+    width:400px ;
+    padding: 13px;
+    margin: 30px 10px 10px 10px;
+   
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1.5px 1.5px 8px rgb(77, 75, 75);
+    outline: none;
+    cursor: pointer;
+    
+}
+
+
+button:hover{
+    background: black;
+    color:white;
+    transition: 0.6s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
