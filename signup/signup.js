@@ -9,8 +9,9 @@ form.addEventListener('submit',(e)=>{
    if( !validateData()){
        e.preventDefault();
    }
+
+});
 alert("Registered Successfully")
-})
    
 function validateData(){
     const usernameVal=username.value.trim();
