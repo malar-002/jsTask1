@@ -3,6 +3,7 @@ const username= document.querySelector('#username');
 const email= document.querySelector('#email');
 const password= document.querySelector('#password');
 const mobile= document.querySelector('#mobile');
+let formvalid=true;
 
 form.addEventListener('submit',(e)=>{
    
@@ -23,6 +24,7 @@ function validateData(){
     const mobileVal=mobile.value.trim();
 
     if(usernameVal===''){
+       formvalid=false;
         setError(username,'Please Enter Your Username');
     }
     else{
@@ -30,9 +32,11 @@ function validateData(){
     }
 
     if(emailVal===''){
+       formvalid=false;
         setError(email,'Please Enter Your Email');
     }
     else if(!validateEmail(emailVal)){
+       formvalid=false;
         setError(email,'Please Enter valid Email');
     }
     else{
@@ -41,9 +45,11 @@ function validateData(){
     
     
     if(passVal===''){
+       formvalid=false;
         setError(password,'Please Enter Your Password');
     }
     else if(passVal.length<8){
+       formvalid=false;
         setError(password,'Password must have 8 digit character');
     }
     else{
@@ -51,16 +57,18 @@ function validateData(){
     }
 
     if(mobileVal===''){
+       formvalid=false;
         setError(mobile,'Please Enter Your Mobile Number');
     }
     else if(mobileVal.length<10 || mobileVal.length>10){
+       formvalid=false;
         setError(mobile,'Enter Valid Mobile Number');
     }
     else{
         valid(mobile);
     }
     
-
+ return formvalid
 }
 
 function setError(element,msg){
