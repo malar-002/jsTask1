@@ -1,11 +1,12 @@
 const form= document.querySelector('#loginForm');
 const email= document.querySelector('#email');
 const password= document.querySelector('#password');
+let formvalid=true;
 
 form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    validateData();
-})
+    if(!validateData()){
+        e.preventDefault();}
+});
 
 function validateData(){
     const emailVal=email.value.trim();
@@ -13,9 +14,11 @@ function validateData(){
 
 
     if(emailVal===''){
+        formvalid=false;
         setError(email,'Please Enter Your Email');
     }
     else if(!validateEmail(emailVal)){
+        formvalid=false;
         setError(email,'Please Enter valid Email');
     }
     else{
@@ -24,16 +27,18 @@ function validateData(){
     
     
     if(passVal===''){
+        formvalid=false;
         setError(password,'Please Enter Your Password');
     }
     else if(passVal.length<8){
+        formvalid=false;
         setError(password,'Password must have 8 digit character');
     }
     else{
         valid(password);
     }
     
-
+return formvalid;
 }
 
 function setError(element,msg){
