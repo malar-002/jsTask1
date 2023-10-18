@@ -11,7 +11,7 @@ form.addEventListener('submit',(e)=>{
    }
 
 });
-alert("Registered Successfully")
+
    
 function validateData(){
     const usernameVal=username.value.trim();
