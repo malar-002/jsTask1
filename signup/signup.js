@@ -9,9 +9,9 @@ form.addEventListener('submit',(e)=>{
    if( !validateData()){
        e.preventDefault();
    }
-   
+   emptyInputBox();
 })
-emptyInputBox();
+
 
 function emptyInputBox(){
     username.value='';
