@@ -9,13 +9,17 @@ form.addEventListener('submit',(e)=>{
    if( !validateData()){
        e.preventDefault();
    }
+   
+})
+emptyInputBox()
+
+function emptyInputBox(){
     username.value='';
     email.value='';
     password.value='';
     mobile.value='';
-})
-
-
+}
+   
 function validateData(){
     const usernameVal=username.value.trim();
     const emailVal=email.value.trim();
