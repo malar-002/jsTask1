@@ -93,14 +93,14 @@ button:hover{
 @media only screen and (max-width: 600px) {
     .container{
         
-        width: 200px;
+        width: 300px;
         height: auto;
         padding: 10px;
         
        
        }
        .heading{
-        width:200px;
+        width:300px;
        text-align: center;
        font-size: 20px;
        padding: 10px;
@@ -109,7 +109,7 @@ button:hover{
     
 
        input{
-        width: 170px;
+        width: 280px;
         height: 30px;
         margin-top: 15px;
         padding: 10px ;
@@ -117,7 +117,7 @@ button:hover{
     
         button {
    
-            width:150px ;
+            width:280px ;
             padding: 10px;
             margin: 30px 10px; 
            
