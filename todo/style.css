@@ -14,12 +14,14 @@
     position: relative;
 }
 h1{
+    
     margin-top: 20px;
     text-align: center;
     color: rgb(32, 233, 223);
 }
 
 .todo{
+    
     width:100%;
     max-width: 540px;
     background: #fff;
@@ -117,6 +119,84 @@ ul li span:hover{
     transition: 0.2s;
 }
 
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 25px;
+        
+    }
+    
+    .todo{
+        
+        width:100%;
+        min-width: 300px;
+        background: #fff;
+        margin-top: 100px auto 20px;
+        padding: 20px 15px;
+        border-radius: 15px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .todo h2{
+       font-size: 20px;
+       width:250px;
+       padding: 0px 50px;
+       text-align: center;
+       
+    }
+    
+    .row{
+       
+        padding:5px 20px;
+        margin-bottom: 10px;
+    }
+    input{
+        
+        padding:5px ;
+       
+    }
+    
+    button{
+       
+        font-size: 10px; 
+        padding: 10px;
+        margin-left: 20px; 
+    
+    }
+    
+    ul li{
+        
+        font-size: 13px;
+        padding:10px 8px 10px 50px;
+        
+    }
+    
+    ul li::before{
+        
+        height: 20px;
+        width:20px;
+       
+    }
+    
+    ul li.throw{
+        text-decoration: line-through;
+    }
+    
+    ul li.throw::before{
+        background-image: url(images/circle3.png);
+    }
+    
+    ul li span{
+        width:20px;
+        height:20px;
+        font-size: 15px;
+        font-weight: 100;
+        
+    
+    }
+   
+}
 
 
 
